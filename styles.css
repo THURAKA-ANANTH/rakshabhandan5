@@ -127,7 +127,7 @@ button:hover {
     width: 150px;
     height: 150px;
     object-fit: fill;
-    border-radius: 20px;
+    border-radius: 75px;
 }
 
 .message {
