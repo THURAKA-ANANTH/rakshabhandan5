@@ -8,22 +8,52 @@ const backgroundImages = [
 let currentImageIndex = 0;
 
 const brotherData = {
-    "harish": {
-        quote: "Brothers are like stars, you don't always see them, but you know they're always there.",
-        image: "images/harish.jpg",
+    "renil": {
+        quote: "Na dagara eppudu titlu tichukuntu happy ga feel aya ma lonely brother niku evaru leru anukoku e chelli vuntundhi nuv happy lo vuna sad lo vuna remember chasukoo nanu ayana remember anti ra call chey ni pakana vunta and once again happy rakshabadhan waste fellow.",
+        image: "images/renil.jpeg",
         song: "songs/song1.mp3" // Replace with actual song URL
     },
-    "ananth kumar": {
-        quote: "A brother is a friend given by nature.",
-        image: "images/Ananth.jpg",
-        song: "https://example.com/song-for-raj.mp3" // Replace with actual song URL
+    "sai": {
+        quote: "You are not just my brother; you are my confidant, my protector, and my support system. Wishing you a Rakhi filled with love and happiness.",
+        image: "images/sai.jpeg",
+        song: "https://example.com/son-for-raj.mp3" // Replace with actual song URL
     },
-    "vikram singh": {
-        quote: "Brothers are playmates in the beginning and best friends for life.",
-        image: "https://via.placeholder.com/60?text=Vikram+Singh",
+    "bharath": {
+        quote: "Appudu em cheyalo baga telsu a time lo em chepalo adi crct ga a time lo chepathadu na waste fellow  nuvu appudu elana vundu ra yedava monkey ninu titadadam irritate cheyadam lona naku happiness vundi and vuntundhi appudu and once again happy rakshabandhan monkey.",
+        image: "images/bharath.jpeg",
         song: "https://example.com/song-for-vikram.mp3" // Replace with actual song URL
     },
-    // Add more brothers here...
+    "ram": {
+        quote: "To that person who handles my mood swings perfectly... thank you! Thank you for dealing with my immaturity sometimes and thank you for not getting tired with my drama. I owe you big time!",
+        image: "images/ram.jpeg",
+        song: "https://example.com/song-for-vikram.mp3" // Replace with actual song URL
+    },
+    "lucky": {
+        quote: "To that person who handles my mood swings perfectly... thank you! Thank you for dealing with my immaturity sometimes and thank you for not getting tired with my drama. I owe you big time!",
+        image: "images/ram.jpeg",
+        song: "https://example.com/song-for-vikram.mp3" // Replace with actual song URL
+    },
+    "avinash": {
+        quote: "Eppudu naku lectures echa waste fellow and support chesa yedava nanu barincha ma annayana vi anthaku minchi natho eppudu vunta ani cheputhu na dagara tituchukuntu unda ma annaya ki happy rakshabandhan ra.",
+        image: "images/avinash.jpeg",
+        song: "https://example.com/song-for-vikram.mp3" // Replace with actual song URL
+    },
+    "lakshman": {
+        quote: "Remembering the strong bond of togetherness shared by you and me. Thanks for being my chota  brother.",
+        image: "images/default.png",
+        song: "https://example.com/song-for-vikram.mp3" // Replace with actual song URL
+    },
+    "ananth": {
+        quote: "Anna ni parichayam chala different but parichayam ayana 1min lona nitho chala free ga matalada and oka annaya feel vachindhi nitho mataladuthunta and thank you for supporting me and my innovative brother and newly thinking guy and once again happy rakshabandhan bro.",
+        image: "images/ananth.jpeg",
+        song: "https://example.com/song-for-vikram.mp3" // Replace with actual song URL
+    },
+     "harish": {
+        quote: "Na alari ni alaga na koriki Lani terusuthu em adigina oka simile nijama ga a situation chala bavutavu emana cheppa freedom vunda antha bond cheppali anta oka frnd and caring brother ani nilo chusukovachu anna and nitho e bonding elana vundali and I miss u so much in future inka chepali anta chala vunayi avi rayadaniki e chat saripodhu anna and once happy rakshabadhan prince of our world.",
+        image: "images/default.png",
+        song: "https://example.com/song-for-vikram.mp3" // Replace with actual song URL
+    },
+
 };
 
 function addBrother() {
@@ -52,7 +82,7 @@ function displayWishes(name) {
     const message = document.createElement('div');
     message.classList.add('message');
     const nameElem = document.createElement('p');
-    nameElem.textContent = `Dear ${capitalizeWords(name)},`;
+    nameElem.textContent = `My Dear ${capitalizeWords(name)} Bro,`;
 
     const quoteElem = document.createElement('p');
     quoteElem.classList.add('quote');
