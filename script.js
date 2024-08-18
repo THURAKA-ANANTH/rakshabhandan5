@@ -36,7 +36,7 @@ const brotherData = {
     "avinash": {
         quote: "Eppudu naku lectures echa waste fellow and support chesa yedava nanu barincha ma annayana vi anthaku minchi natho eppudu vunta ani cheputhu na dagara tituchukuntu unda ma annaya ki happy rakshabandhan ra.",
         image: "images/avinash.jpeg",
-        song: "https://example.com/song-for-vikram.mp3" // Replace with actual song URL
+        song: "songs/song5.mp3" // Replace with actual song URL
     },
     "lakshman": {
         quote: "Remembering the strong bond of togetherness shared by you and me. Thanks for being my chota  brother.",
@@ -46,7 +46,7 @@ const brotherData = {
     "ananth": {
         quote: "Anna ni parichayam chala different but parichayam ayana 1min lona nitho chala free ga matalada and oka annaya feel vachindhi nitho mataladuthunta and thank you for supporting me and my innovative brother and newly thinking guy and once again happy rakshabandhan bro.",
         image: "images/ananth.jpeg",
-        song: "https://example.com/song-for-vikram.mp3" // Replace with actual song URL
+        song: "songs/song5.mp3" // Replace with actual song URL
     },
      "harish": {
         quote: "Na alari ni alaga na koriki Lani terusuthu em adigina oka simile nijama ga a situation chala bavutavu emana cheppa freedom vunda antha bond cheppali anta oka frnd and caring brother ani nilo chusukovachu anna and nitho e bonding elana vundali and I miss u so much in future inka chepali anta chala vunayi avi rayadaniki e chat saripodhu anna and once happy rakshabadhan prince of our world.",
