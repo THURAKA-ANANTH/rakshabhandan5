@@ -126,7 +126,7 @@ button:hover {
 .brother-card img {
     width: 150px;
     height: 150px;
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 75px;
 }
 
