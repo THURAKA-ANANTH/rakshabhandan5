@@ -1,3 +1,9 @@
+
+
+
+
+
+
 const brothers = [];
 const backgroundImages = [
     'images/bg1.png',
@@ -50,10 +56,9 @@ const brotherData = {
     },
      "harish": {
         quote: "Na alari ni alaga na koriki Lani terusuthu em adigina oka simile nijama ga a situation chala bavutavu emana cheppa freedom vunda antha bond cheppali anta oka frnd and caring brother ani nilo chusukovachu anna and nitho e bonding elana vundali and I miss u so much in future inka chepali anta chala vunayi avi rayadaniki e chat saripodhu anna and once happy rakshabadhan prince of our world.",
-        image: "images/default.png",
+        image: "images/harish.jpeg",
         song: "songs/song2.mp3" // Replace with actual song URL
-    },
-
+    }
 };
 
 function addBrother() {
@@ -64,7 +69,7 @@ function addBrother() {
         brothers.push(name);
         displayWishes(name);
         playBackgroundMusic(name);
-        changeBackgroundImage(); // Change background image
+        changeBackgroundImage(); // Change background image randomly
         nameInput.value = '';
         hideSuggestions();
         startRakhiAnimation(); // Start Rakhi falling animation on adding a brother
@@ -90,18 +95,6 @@ function displayWishes(name) {
     if (brotherData[name]) {
         img.src = brotherData[name].image;
         quoteElem.textContent = brotherData[name].quote;
-
-        const audioElem = document.createElement('audio');
-        audioElem.controls = false;
-        audioElem.loop = true;
-        audioElem.autoplay = true;
-
-        const sourceElem = document.createElement('source');
-        sourceElem.src = brotherData[name].song;
-        sourceElem.type = 'audio/mpeg';
-        audioElem.appendChild(sourceElem);
-
-        message.appendChild(audioElem);
     } else {
         img.src = 'images/default.png';
         quoteElem.textContent = 'A brother shares childhood memories and grown-up dreams.';
@@ -231,8 +224,9 @@ function changeBackgroundImage() {
     const backgroundElement = document.getElementById('background');
 
     if (backgroundElement) {
-        currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
-        backgroundElement.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
+        // Pick a random image from the backgroundImages array
+        const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+        backgroundElement.style.backgroundImage = `url('${backgroundImages[randomIndex]}')`;
     } else {
         console.error("Background element not found");
     }
